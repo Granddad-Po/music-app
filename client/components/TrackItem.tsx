@@ -13,7 +13,7 @@ interface TrackItemProps {
 
 const TrackItem: React.FC<TrackItemProps> = ({track, active = false}) => {
     const router = useRouter()
-    
+
     return (
         <Card className={styles.track} onClick={() => router.push('/tracks/' + track._id)}>
             <IconButton onClick={e => e.stopPropagation()}>
